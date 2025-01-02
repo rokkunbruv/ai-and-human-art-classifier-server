@@ -13,7 +13,7 @@ def process_image_to_model(b64_image: str) -> tuple[str, float]:
     )
 
     # split prediction results
-    result_data = result['data'].split(',')
+    result_data = result.split(',')
 
     # assign prediction label and confidence level from result data
     predicted_label = result_data[0]
